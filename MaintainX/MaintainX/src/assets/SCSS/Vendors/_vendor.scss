@@ -1,0 +1,56 @@
+@use '../color' as color;
+@use '../placeholder';
+
+.Vendor{
+    width: 100%;
+    height: 90%;
+    margin-block: 2rem 1rem;
+    border: 0.5px solid color.$border-color;
+    box-shadow: 2px 2px 1.5px 0px color.$border-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__content{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__icon{
+            width: 250px;
+            height: 250px;
+            background-color: color.$shadow-blue;
+            border-radius: 50%;
+        }
+        
+        &__firstParagraph{
+            @extend %menu-text;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 20px;
+            padding-block-start: 0.2rem;
+        }
+
+        &__secondParagraph{
+            @extend %menu-text;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-block: 1rem;
+
+            &__span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-inline: 0.3rem;
+                font-weight: bold;
+            }
+        }
+    }
+}

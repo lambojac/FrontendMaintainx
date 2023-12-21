@@ -1,0 +1,59 @@
+@use './color' as color;
+@use './fonts' as fonts;
+@use './placeholder';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-block-start: 6px;
+
+    &__container{
+        width: 35%;
+        display: flex;
+        justify-content: space-around;
+        margin-inline-end: 1rem;
+
+        &__text{
+            width: 249px;
+            @extend %large-heading;
+        }
+        &__btnContainer{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    &__filterContainer{
+        width: 50%;
+    }
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+
+    &__input{
+        font-family: fonts.$primary-ff;
+        font-size: 12px;
+        border-radius: 5px;  
+        width: 400px;
+        height: 45px;
+        padding: 0.5rem 1.25rem;
+        margin-inline-end: 1.063rem;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__button{
+        width: 160px;
+        height: 45px;
+        background-color: color.$custom-blue;
+        @extend %filterBtn; 
+        border: none;
+        border-radius: 5px; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

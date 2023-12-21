@@ -1,0 +1,45 @@
+@use './color' as color;
+@use './placeholder';
+
+.menuList{
+  
+    a{
+        display: flex;
+        align-items: center;
+        padding: 1rem 0.5rem;
+        margin-block: .5rem;
+        text-decoration: none;
+    }
+    
+    &__menuItems{
+        @extend %menu-text;
+        svg{
+            font-size: 18px;
+            margin-inline-end: 0.75rem;
+            color: color.$icon-blue;
+        }
+        &:hover{
+            background-color: color.$shadow-color;
+            transition: 1s ease-in-out;
+        }
+      
+    }
+    
+    &__active{
+        
+        @extend %menu-text;
+        color: color.$custom-blue;
+        background-color: color.$shadow-blue;
+
+        svg{
+            font-size: 20px;
+            margin-inline-end: 0.75rem;
+            color: color.$custom-blue;
+        }
+    }
+
+    hr{
+        width: 230px;
+        opacity: .2;
+    }
+}

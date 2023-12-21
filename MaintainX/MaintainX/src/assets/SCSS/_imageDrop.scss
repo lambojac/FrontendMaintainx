@@ -1,0 +1,36 @@
+@use './color' as color;
+@use './placeholder';
+
+.dropzone {
+  width: 93%;
+  height: 110px;
+  border-radius: 4px;
+  margin: 1.5rem 3.938rem 1.5rem 1.438rem;
+  padding: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  color: color.$custom-blue;
+  border: .5px dashed color.$custom-blue;
+  background-color: color.$background-blue;
+  @extend %menu-text;
+  font-size: 11px;
+  font-weight: 500;
+
+  &__text{
+    padding-block-start: 0.625rem;
+  }
+
+  &__camIcon{
+    font-size: 16px;
+  }
+}
+    
+img {
+  max-width: 100%;
+  max-height: 300px;
+  margin-top: 20px;
+}
+

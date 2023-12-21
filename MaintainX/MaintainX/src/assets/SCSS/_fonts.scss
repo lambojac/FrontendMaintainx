@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../Fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../Fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+$primary-ff: 'Poppins', sans-serif;
+$secondary-ff: 'Inter', sans-serif;

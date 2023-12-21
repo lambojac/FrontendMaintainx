@@ -1,0 +1,23 @@
+@use './color' as color;
+
+.todo{
+    height: 100%;
+    display: flex;
+    padding: 0 0.2rem 0 ;
+    margin-block-start: 1.5rem;
+
+        &__saved-Content{
+            width: 40%;
+            height: 80%;
+            margin-inline-end: 1.063rem;
+            border-radius: 10px;
+            border: 1px solid color.$border-color;
+
+        }
+        &__create-content{
+            width: 60%;
+            height: 80%; 
+            border-radius: 10px;
+            border: 1px solid color.$border-color; 
+        }
+}          

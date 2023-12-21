@@ -1,0 +1,64 @@
+@use './placeholder';
+@use './mixins';
+@use './color' as color;
+
+.Tabby{
+
+    &__btnCont{
+        width: 100%;
+        display: flex;
+    }
+
+    &__btnCont{
+        
+        &__tab{
+            @extend %todoBtn-text;
+            @include mixins.btn;
+            width: 50%;
+            font-size: 14px;
+            border-bottom: 1px solid color.$border-color;
+            padding: 1.563rem 0 0.938rem;   
+        }
+        &__activeBtn{
+            position: relative;
+            @extend %todoBtn-text;
+            @include mixins.btn;
+            width: 50%;
+            font-size: 14px;
+            font-weight: 600;
+            color: color.$custom-blue;
+            border-bottom: 2px solid color.$custom-blue;
+            padding: 1.563rem 0 0.938rem; 
+               
+        }
+    }
+
+    &__tabsContents{
+
+        &__ContentFilter{
+            width: 100%;
+            height: 47px;
+            border-bottom: 1px solid color.$border-color;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-inline: 0.75rem;
+
+            &__filter{
+                @extend %menu-text;
+                color: color.$filterBtn-color;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+            }
+
+            &__icon{
+                font-size: 24px;
+                color: color.$filterBtn-color;
+            }
+        }
+    }
+   
+}
+

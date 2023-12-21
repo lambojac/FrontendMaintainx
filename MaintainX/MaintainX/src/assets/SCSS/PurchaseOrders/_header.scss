@@ -1,0 +1,26 @@
+@use '../mixins';
+@use '../placeholder';
+@use '../color' as color;
+
+.Purchase{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-block-start: 6px;
+
+    &__container{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        margin-inline-end: 1rem;
+
+        &__text{
+            @extend %large-heading;
+        }
+        &__btnContainer{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}

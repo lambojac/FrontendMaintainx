@@ -1,0 +1,76 @@
+@use './placeholder';
+@use './color' as color;
+@use './mixins';
+
+.dateSchedule{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+    &__label{
+        @extend %menu-text;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 1.75rem 1.438rem 0.5rem;
+    }
+
+    &__DateandTime{
+        display: flex;
+        
+        &__btn{
+            @include mixins.btn;
+            @extend %filterBtn;
+            font-size: 12px;
+            font-weight: 400;
+            color: color.$custom-blue;
+            padding: 0 1.438rem 0.5rem;
+        }
+
+        &__input{
+        width: 204px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid color.$border-color;
+        margin: 0 1.438rem 0.5rem;
+        color: color.$custom-blue;
+
+        &:focus{
+            outline: none;
+        }
+        }
+
+        &__Time{
+
+            &__Times{
+            position: absolute;
+            right: 50px;
+            }
+
+            &__timeInput{
+            position: relative;
+            width: 204px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid color.$border-color;
+            margin: 0 1.438rem 0.5rem;
+            color: color.$custom-blue;
+
+            &:focus{
+            outline: none;
+            }
+        }
+
+    }
+}
+
+    &__btn{
+        @include mixins.btn;
+        @extend %filterBtn;
+        font-size: 12px;
+        font-weight: 400;
+        color: color.$custom-blue;
+        padding: 0 1.438rem 0.5rem;
+    }
+    
+    
+}

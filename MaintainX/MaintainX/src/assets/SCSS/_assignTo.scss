@@ -1,0 +1,27 @@
+@use './placeholder';
+@use'./color' as color;
+
+.assignTo{
+    padding: 2.063rem 1.438rem 0;
+    
+    &__label{
+        @extend %menu-text;
+        font-size: 14px;
+        font-weight: 600;
+        display: block;
+        padding-block-end: 0.5rem;
+    }
+
+    &__select{
+        width: 518px;
+        height: 40px; 
+        @extend %menu-text;
+        font-size: 12px;
+        border-radius: 5px;
+        border: 1px solid color.$border-color;
+
+        &:focus{
+            outline: unset
+        }
+    }
+}

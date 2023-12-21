@@ -1,0 +1,10 @@
+@use './color' as color;
+
+@mixin btn () {
+    padding: 0.125rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 35px;
+    color: color.$icon-blue;
+}

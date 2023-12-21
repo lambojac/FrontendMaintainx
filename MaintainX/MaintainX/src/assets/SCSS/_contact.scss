@@ -1,0 +1,12 @@
+@use './placeholder';
+@use './color' as color;
+
+.contact{
+    padding: 1.25rem ;
+  
+    &__link{
+        @extend %menu-text;
+        color: color.$custom-blue;
+        text-decoration: none;
+    }
+}

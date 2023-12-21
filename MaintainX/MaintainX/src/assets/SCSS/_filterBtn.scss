@@ -1,0 +1,14 @@
+@use './color' as color;
+
+.filterBtns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-block-start: 1.25rem;
+
+    &__threeBtn{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

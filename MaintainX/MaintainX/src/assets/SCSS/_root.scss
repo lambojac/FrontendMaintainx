@@ -1,0 +1,17 @@
+.root{
+    width: 1024px;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+
+    &__page{
+        width: 27%;
+        height: 100%;
+        padding-inline-end: 1rem;
+    }
+
+    &__content{
+        width: 100%;
+        height: 100%;
+    }
+}

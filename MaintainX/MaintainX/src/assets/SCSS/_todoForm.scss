@@ -1,0 +1,94 @@
+@use './placeholder';
+@use './color' as color;
+
+.newWorkOrder{
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    &__bigtext{
+        font-weight: 600;
+        @extend %menu-text;
+        font-size: 20px;
+        padding: 1.25rem 1.438rem;
+        border-bottom: .1px solid color.$border-color;
+    }
+
+    &__name{
+        width: 93%;
+        padding: 1.75rem 0.1rem 0;
+        @extend %menu-text;
+        font-size: 19px;
+        font-weight: 500;
+        margin: 0 3.938rem 0 1.438rem;
+        border: none;
+        border-bottom: 1px solid color.$border-color;
+
+        &:focus{
+            outline: unset;
+        }
+    }  
+    
+    &__descContainer{
+
+        &__label{
+            @extend %menu-text;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 1.75rem 1.438rem 1rem;
+        }
+
+        &__textarea{
+            width: 93%;
+            height: 85px;
+            margin: 0.5rem 3.938rem 0 1.438rem;
+            padding: 0.5rem;
+            @extend %menu-text;
+            font-size: 12px;
+            border: 1px solid color.$border-color;
+            border-radius: 5px;
+
+            &::placeholder{
+                @extend %menu-text;
+                font-size: 14px;
+            }
+
+            &:focus{
+                outline: unset;
+            }
+        }
+    }
+
+    &__procedureContainer{
+        padding-inline-end: 3.938rem;
+
+        &__text{
+            @extend %menu-text;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 1.75rem 1.438rem 2.063rem;
+        }
+
+        &__content{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+
+            &__text{
+                display: flex;
+                align-items: center;
+                padding-block-end: 1.313rem;
+                @extend %menu-text;
+                font-size: 13px;
+                font-weight: 500;
+
+                &__icon{
+                    font-size: 22px;
+                    color: color.$custom-blue;
+                }
+            }
+        }
+    }
+}

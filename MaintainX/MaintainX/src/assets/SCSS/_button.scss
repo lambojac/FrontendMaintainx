@@ -1,0 +1,97 @@
+@use './color' as color;
+@use './placeholder';
+@use './mixins';
+
+.headerBtn{
+    @include mixins.btn;
+
+    &:hover{
+        color: color.$custom-blue;
+        transition: .30s ease-in-out;
+    }
+}
+
+.procedureBtn{
+    @include mixins.btn;
+    width: 150px;
+    height: 40px;
+    @extend %large-heading;
+    font-size: 14px;
+    color: color.$custom-blue;
+    border: 1px solid color.$custom-blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.313rem 0.625rem;
+    border-radius: 5px;
+}
+
+.active{
+    color: color.$custom-blue;
+    background-color: color.$shadow-blue;
+}
+.threeBtn__button{
+    @extend %todoBtn-text;
+    font-size: 14px;
+    font-weight: 500;
+    width: 150px;
+    height: 40px;
+    margin-inline-end: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid color.$border-color;
+    border-radius: 7px;
+    color: color.$filterBtn-color;
+
+    &:nth-child(2){
+        width: 126px;
+    }
+    &:nth-child(3){
+        width: 100px;
+    }
+    &:nth-child(4){
+        border: none;
+    }
+
+    &__icon{
+        font-size: 20px;
+        font-weight: bold;
+        padding-inline-end: 2px;
+        color: color.$custom-blue;
+    }
+}
+
+.oneBtn__button{
+    @extend %todoBtn-text;
+    font-size: 14px;
+    font-weight: 500;
+    width: 120px;
+    height: 40px;
+    margin-inline-end: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid color.$border-color;
+    border-radius: 7px;
+    color: color.$filterBtn-color;
+
+    &__icon{
+        font-size: 20px;
+        font-weight: bold;
+        padding-inline-end: 2px;
+        color: color.$custom-blue;
+    }
+}
+
+.newPurchaseOrderBtn{
+        width: 180px;
+        height: 45px;
+        background-color: color.$custom-blue;
+        @extend %filterBtn; 
+        border: none;
+        border-radius: 5px; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}

@@ -1,0 +1,16 @@
+.sidebar{
+    width: 100%;
+    height: 90%;
+    padding: 0.1rem 1.188rem 0;
+    overflow: hidden;
+    overflow-y: auto;
+
+    // &::-webkit-scrollbar{
+    // }
+
+    &__logo{
+        width: 90%;
+        height: 170px; 
+        padding-block-end: 0.875rem;
+    }
+}
