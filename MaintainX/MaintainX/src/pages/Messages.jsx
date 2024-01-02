@@ -1,7 +1,8 @@
 import {useState} from 'react';
+import Message from "../components/Messages/message"
 const messag = () => {
   return (
-    <div>message</div>
+    <Message/>
   )
 }
 

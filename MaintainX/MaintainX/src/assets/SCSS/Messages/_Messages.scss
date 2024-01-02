@@ -1,0 +1,50 @@
+
+.main-container {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Adjust the height as needed */
+}
+    .container {
+      width: 80%; /* Adjust the width of the container */
+      margin: 0 auto; /* Center the container horizontally */
+    }
+  
+    .header-container {
+      display: flex;
+      justify-content: space-between; /* Aligns items to each end, placing them at the beginning and end of the flex container */
+      align-items: center;
+    }
+  
+      .messages {
+        margin-right: 20px; /* Adds some space between "Messages" and other elements */
+      }
+  
+      .all-team {
+        display: flex;
+        align-items: center;
+  
+        form {
+          margin-right: -50px; /* Adds space between the form and the button */
+        }
+  
+        
+      }
+      .search{
+        width:600px;
+        height:60px;
+      }
+   .header-button{
+    position:absolute;
+    right:-400px;
+    border-radius: 5px;
+   }
+   .button {
+          width:250px;  
+          height: 60px;
+          border-radius:5px;
+          background-color:#007aff;
+   }
+  .messages{
+    font-size: 50px;
+  }
